@@ -91,7 +91,6 @@ callback(null, !condition);
  }, function(err,results) {
 tokens=results;
 callback(combined());
-
  });
 
 };
@@ -136,7 +135,6 @@ function clean (array, deleteValue, callback) {
       i--
     }
   }
-  callback(null, array)
 }
 
 

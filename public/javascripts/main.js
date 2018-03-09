@@ -25,7 +25,7 @@ function socketConnect (){
 function every(){
 
 $('.countdown').each(function( index ) {
-   if(Number($(this).text())<1) $("#tokenstable").DataTable().row( $(this).closest('tr')).remove().draw();
+   if(Number($(this).text())<1) $(this).closest('table').DataTable().row( $(this).closest('tr')).remove().draw();
   else  $(this).html(Number($(this).text())-1);
      });
 }
